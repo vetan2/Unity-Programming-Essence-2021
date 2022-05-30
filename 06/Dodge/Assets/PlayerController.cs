@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody playerRigidbody;
+    private Rigidbody playerRigidbody;
 
     public float speed = 8f;
 
     void Start()
     {
+        playerRigidbody = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -34,7 +35,7 @@ public class PlayerController : MonoBehaviour
             playerRigidbody.AddForce(-speed, 0f, 0f);
         }
     }
-    
+
     public void Die()
     {
         gameObject.SetActive(false);
