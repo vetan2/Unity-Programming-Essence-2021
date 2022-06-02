@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 442334380}
   - component: {fileID: 442334379}
   - component: {fileID: 442334378}
+  - component: {fileID: 442334382}
   m_Layer: 0
   m_Name: Bullet Spawner
   m_TagString: Untagged
@@ -350,6 +351,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &442334382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442334377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d79dabef85df44f8b0d8558de3d7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8738167056708751667, guid: a74f5560c52a83a41929f0e1da22e574, type: 3}
+  spawnRateMin: 0.5
+  spawnRateMax: 3
 --- !u!1 &674874648
 GameObject:
   m_ObjectHideFlags: 0
