@@ -8,7 +8,7 @@ public class BulletSpawner : MonoBehaviour
 
     public float spawnRateMin = 0.5f;
 
-    public float spawnerRateMax = 3f;
+    public float spawnRateMax = 3f;
 
     private Transform target;
 
@@ -17,16 +17,18 @@ public class BulletSpawner : MonoBehaviour
     /// <summary>
     /// 최근 생성 시점에서 지난 시간
     /// </summary>
-    private float timeAfterSpawn; 
+    private float timeAfterSpawn;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        timeAfterSpawn = 0f;
+        spawnRate = Random.Range(spawnRateMin, spawnRateMax);
+        target = FindObjectOfType<PlayerController>().transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
